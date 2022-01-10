@@ -1,0 +1,6 @@
+framework module kotlin_library {
+    umbrella header "kotlin_library.h"
+
+    export *
+    module * { export * }
+}
