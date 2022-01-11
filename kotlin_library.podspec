@@ -3,6 +3,7 @@ Pod::Spec.new do |spec|
     spec.version                  = '1.0'
     spec.homepage                 = 'https://github.com/SpiderSwift/kotlin-library'
     spec.authors                  = 'SpiderSwift'
+    spec.source                   = { :git => "https://github.com/SpiderSwift/kotlin-library" }
     spec.license                  = 'Apache-2.0 License'
     spec.summary                  = 'CocoaPods test library'
 
