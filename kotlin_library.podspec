@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.license                  = 'Apache-2.0 License'
     spec.summary                  = 'CocoaPods test library'
 
-    spec.vendored_frameworks      = "build/cocoapods/framework/kotlin_library.framework"
+    spec.vendored_frameworks      = "kotlin_library.framework"
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
