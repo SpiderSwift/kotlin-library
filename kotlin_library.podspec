@@ -20,8 +20,4 @@ Pod::Spec.new do |spec|
         'PRODUCT_MODULE_NAME' => 'kotlin_library',
     }
 
-    spec.prepare_command = <<-SCRIPT
-      set -ev
-      ./gradlew --no-daemon -Pframework=#{spec.name}.framework linkPodReleaseFrameworkIosX64 --stacktrace --info
-    SCRIPT
 end
