@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Publish to CocoaPod register
-    env:
+    env: 
       COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: pod trunk push kotlin_library.podspec
