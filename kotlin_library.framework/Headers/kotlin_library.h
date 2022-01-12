@@ -164,6 +164,7 @@ __attribute__((swift_name("Test")))
 - (void)delay __attribute__((swift_name("delay()")));
 - (int64_t)durationMinusMinus:(int64_t)minus __attribute__((swift_name("durationMinus(minus:)")));
 - (int64_t)durationPlusPlus:(int64_t)plus __attribute__((swift_name("durationPlus(plus:)")));
+- (void)doNewFun __attribute__((swift_name("doNewFun()")));
 - (void)registerCallback:(id<Kotlin_libraryTestCallback>)callback __attribute__((swift_name("register(callback:)")));
 - (void)trigger __attribute__((swift_name("trigger()")));
 @property (readonly) Kotlin_libraryGeneric<NSString *> *generic __attribute__((swift_name("generic")));
