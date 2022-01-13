@@ -16,18 +16,19 @@ jobs:
     - name: Validate Gradle wrapper
       uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: Build with Gradle
-      run: |
-        ./gradlew build
-        ls -a
-    - name:  Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-          name: build
-          path: build
-    - name: Publish to Cocoapods
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-      run: pod trunk push kotlin_library.podspec
+      run: |
+        ./gradlew build
+        pod trunk push kotlin_library.podspec
+    #- name:  Upload artifact
+    #  uses: actions/upload-artifact@v2
+    #  with:
+    #      name: build
+    #      path: build
+    #- name: Publish to Cocoapods
+    #  
+    #  run: pod trunk push kotlin_library.podspec
 
 #name: CI
 #on:
