@@ -1,11 +1,10 @@
-name: gradle build
+name: gradle build and upload cocoapod
 
 on: [push]
 
 jobs:
-  build:
+  build: 
     runs-on: macOS-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 15
@@ -16,34 +15,14 @@ jobs:
     - name: Validate Gradle wrapper
       uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: Build with Gradle
+      run: ./gradlew build
+  upload:
+    runs-on: macOS-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v1
+    - name: Publish to CocoaPod register
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
-        ./gradlew build
         pod trunk push kotlin_library.podspec
-    #- name:  Upload artifact
-    #  uses: actions/upload-artifact@v2
-    #  with:
-    #      name: build
-    #      path: build
-    #- name: Publish to Cocoapods
-    #  
-    #  run: pod trunk push kotlin_library.podspec
-
-#name: CI
-#on:
-#  push:
-#    branches:
-#    - master
-#    
-#jobs:
-#  build:
-#    runs-on: macOS-latest
-#    
-#    steps:
-#    - uses: actions/checkout@v1
-#    - name: Publish to CocoaPod register
-#      env:
-#        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-#      run: |
-#        pod trunk push kotlin_library.podspec
