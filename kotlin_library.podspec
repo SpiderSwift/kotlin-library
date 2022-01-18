@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
         'PRODUCT_MODULE_NAME' => 'kotlin_library',
     }
 
-    spec.test_spec.script_phase = {
+    spec.script_phases = {
         :name => 'compile script',
         :execution_position => :before_compile,
         :script => <<-CMD
