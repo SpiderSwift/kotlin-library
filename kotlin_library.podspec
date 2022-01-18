@@ -17,10 +17,9 @@ Pod::Spec.new do |spec|
         'PRODUCT_MODULE_NAME' => 'kotlin_library',
     }
 
-    spec.script_phase = {
-        :name => 'compile script',
-        :execution_position => :before_compile,
-        :script => './gradlew releaseFatFramework'
-    }
+    spec.prepare_command = <<-SCRIPT
+      set -ev
+      ./gradlew --no-daemon linkReleaseFrameworkIosFat
+    SCRIPT
 
 end
