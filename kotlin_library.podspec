@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.license                  = { :type => 'Apache-2.0 License', :file => 'LICENSE' }
     spec.summary                  = 'Test library compiled with Kotlin'
 
-    spec.vendored_frameworks      = "build/bin/iosArm64/releaseFramework/kotlin_library.framework"
+    spec.vendored_frameworks      = "build/bin/iosX64/releaseFramework/kotlin_library.framework"
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
 
     spec.prepare_command = <<-SCRIPT
       set -ev
-      ./gradlew --no-daemon linkReleaseFrameworkIosArm64
+      ./gradlew --no-daemon linkReleaseFrameworkIosX64
     SCRIPT
 
 end
