@@ -2,20 +2,41 @@ name: gradle build and upload cocoapod
 
 on: [push]
 
+
 jobs:
-  tag:
+  build:
+    name: Create Release
     runs-on: macOS-latest
     steps:
-      - name: Create tag
-        uses: actions/github-script@v5
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          script: |
-            github.rest.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: 'refs/tags/0.1.4',
-              sha: context.sha
-            })
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Fifth automated release
+          draft: false
+          prerelease: true
+
+#jobs:
+#  tag:
+#    runs-on: macOS-latest
+#    steps:
+#      - name: Create tag
+#        uses: actions/github-script@v5
+#        with:
+#          script: |
+#            github.rest.git.createRef({
+#              owner: context.repo.owner,
+#             repo: context.repo.repo,
+#              ref: 'refs/tags/0.1.4',
+#              sha: context.sha
+#            })
 
 #jobs:
 #  build: 
