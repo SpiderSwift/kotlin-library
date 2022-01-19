@@ -15,18 +15,12 @@ jobs:
     - name: Validate Gradle wrapper
       uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: Build with Gradle
-      run: ./gradlew --no-daemon linkReleaseFrameworkIosX64
-  push:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v2
-      - name: Commit report
-        run: |
-          git config --global user.name 'SpiderSwift'
-          git config --global user.email 'artem.pishchalov@gmail.com'
-          git commit -am "Automated build push"
-          git push
+      run: |
+        ./gradlew --no-daemon linkReleaseFrameworkIosX64
+        git config --global user.name 'SpiderSwift'
+        git config --global user.email 'artem.pishchalov@gmail.com'
+        git commit -am "Automated build push"
+        git push
 
 #  upload:
 #    runs-on: macOS-latest
