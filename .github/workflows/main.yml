@@ -23,6 +23,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Commit report
         run: |
+          git config --global user.name 'SpiderSwift'
+          git config --global user.email 'artem.pishchalov@gmail.com'
           git commit -am "Automated build push"
           git push
 
