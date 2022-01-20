@@ -13,7 +13,7 @@ jobs:
         run: |
           cd kotlin-library-test
           pod install
-          xcodebuild -workspace kotlin-library-test.xcworkspace -scheme kotlin-library-swift-test -destination 'platform=iOS Simulator,name=iPad Air (4th generation)' test
+          xcodebuild -workspace kotlin-library-test.xcworkspace -scheme kotlin-library-swift-test -destination 'platform=macOS, arch=x86_64' test
 
 #jobs:
 #  build:
