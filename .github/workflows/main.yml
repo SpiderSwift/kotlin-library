@@ -2,26 +2,38 @@ name: gradle build and upload cocoapod
 
 on: [push]
 
-
 jobs:
-  build:
-    name: Create Release
+  test-swift:
+    name: Test Swift project
     runs-on: macOS-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: |
-            Fifth automated release
-          draft: false
-          prerelease: true
+      - name: Execute test
+        run: |
+          cd kotlin-library-test
+          pod install
+          xcodebuild -workspace kotlin-library-test.xcworkspace -scheme kotlin-library-swift-test -destination 'platform=iOS Simulator,name=iPad Air (4th generation)' test
+
+#jobs:
+#  build:
+#    name: Create Release
+#    runs-on: macOS-latest
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#      - name: Create Release
+#        id: create_release
+#        uses: actions/create-release@v1
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+#        with:
+#          tag_name: ${{ github.ref }}
+#          release_name: Release ${{ github.ref }}
+#          body: |
+#            Fifth automated release
+#          draft: false
+#          prerelease: true
 
 #jobs:
 #  tag:
