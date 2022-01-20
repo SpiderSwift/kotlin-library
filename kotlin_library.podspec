@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
-    spec.ios.deployment_target = '13.5'
+    spec.ios.deployment_target = '9.0'
 
     spec.pod_target_xcconfig = {
         'PRODUCT_MODULE_NAME' => 'kotlin_library',
