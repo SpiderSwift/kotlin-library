@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '13.5'
+
+target 'kotlin-library-test' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  #pod 'kotlin_library'
+
+  target 'kotlin-library-swift-test' do
+    pod 'kotlin_library', :path => '../'
+  end
+
+end

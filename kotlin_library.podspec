@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'kotlin_library'
-    spec.version                  = '0.1.3'
+    spec.version                  = '0.1.5'
     spec.homepage                 = 'https://github.com/SpiderSwift/kotlin-library'
     spec.authors                  = { 'Artyom Pishchalov' => 'artem.pishchalov@gmail.com' }
     spec.source                   = { :git => 'https://github.com/SpiderSwift/kotlin-library.git', :tag => spec.version.to_s }
@@ -17,9 +17,9 @@ Pod::Spec.new do |spec|
         'PRODUCT_MODULE_NAME' => 'kotlin_library',
     }
 
-    spec.prepare_command = <<-SCRIPT
-      set -ev
-      ./gradlew --no-daemon linkReleaseFrameworkIosX64
-    SCRIPT
+    # spec.prepare_command = <<-SCRIPT
+    #   set -ev
+    #   ./gradlew --no-daemon linkReleaseFrameworkIosX64
+    # SCRIPT
 
 end
