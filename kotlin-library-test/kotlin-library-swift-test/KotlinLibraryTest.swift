@@ -7,7 +7,7 @@ class KotlinLibaryTest: XCTestCase {
 
     func testVar() throws {
         self.measure {
-            assert(test.integer == 1)
+            assert(test.integer == 0)
             assert(test.map == ["a" : "b", "c" : "d"])
             assert(test.list == ["a", "b", "c", "d"])
         }
