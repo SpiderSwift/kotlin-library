@@ -30,10 +30,10 @@
             filePath = "kotlin-library-swift-test/KotlinLibraryTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4"
-            endingLineNumber = "4"
-            landmarkName = "KotlinLibaryTest"
-            landmarkType = "3">
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "InMsg"
+            landmarkType = "14">
             <Locations>
                <Location
                   uuid = "7096CCA7-C326-4C1F-ACC6-6817D4B14E01 - 95975a0cd2d13e50"
@@ -146,79 +146,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D59EAD90-BF9C-4C7E-BC73-F658E69F329B"
+            uuid = "120C637D-2153-48F6-A937-049D0765FCBF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kotlin-library-swift-test/KotlinLibraryTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6"
-            endingLineNumber = "6"
-            landmarkName = "KotlinLibaryTest"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "D59EAD90-BF9C-4C7E-BC73-F658E69F329B - 62ef9b6a1cdea6da"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "kotlin_library_swift_test.KotlinLibaryTest.test.getter : __C.Kotlin_libraryTest"
-                  moduleName = "kotlin-library-swift-test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/artem/git/kotlin-library-test/kotlin-library-swift-test/KotlinLibraryTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "6"
-                  endingLineNumber = "6"
-                  offsetFromSymbolStart = "49">
-               </Location>
-               <Location
-                  uuid = "D59EAD90-BF9C-4C7E-BC73-F658E69F329B - 1cc63d6b223a308f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "kotlin_library_swift_test.KotlinLibaryTest.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; kotlin_library_swift_test.KotlinLibaryTest"
-                  moduleName = "kotlin-library-swift-test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/artem/git/kotlin-library-test/kotlin-library-swift-test/KotlinLibraryTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "6"
-                  endingLineNumber = "6"
-                  offsetFromSymbolStart = "58">
-               </Location>
-               <Location
-                  uuid = "D59EAD90-BF9C-4C7E-BC73-F658E69F329B - 58743b616580c66f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "kotlin_library_swift_test.KotlinLibaryTest.init(selector: ObjectiveC.Selector) -&gt; kotlin_library_swift_test.KotlinLibaryTest"
-                  moduleName = "kotlin-library-swift-test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/artem/git/kotlin-library-test/kotlin-library-swift-test/KotlinLibraryTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "6"
-                  endingLineNumber = "6"
-                  offsetFromSymbolStart = "58">
-               </Location>
-               <Location
-                  uuid = "D59EAD90-BF9C-4C7E-BC73-F658E69F329B - 8b8009f3edd00c4d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "kotlin_library_swift_test.KotlinLibaryTest.init() -&gt; kotlin_library_swift_test.KotlinLibaryTest"
-                  moduleName = "kotlin-library-swift-test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/artem/git/kotlin-library-test/kotlin-library-swift-test/KotlinLibraryTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "6"
-                  endingLineNumber = "6"
-                  offsetFromSymbolStart = "42">
-               </Location>
-            </Locations>
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "testVar()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -1,0 +1,6 @@
+framework module Pods_kotlin_library_test_kotlin_library_swift_test {
+  umbrella header "Pods-kotlin-library-test-kotlin-library-swift-test-umbrella.h"
+
+  export *
+  module * { export * }
+}

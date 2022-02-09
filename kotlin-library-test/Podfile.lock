@@ -1,0 +1,16 @@
+PODS:
+  - kotlin_library (0.1.6)
+
+DEPENDENCIES:
+  - kotlin_library (from `../`)
+
+EXTERNAL SOURCES:
+  kotlin_library:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  kotlin_library: 75694c228a1177fa94792091526aa12cdd0e9754
+
+PODFILE CHECKSUM: 0fea4f5aa6011e5c0c36f6fc12faee43bd594fcb
+
+COCOAPODS: 1.11.2

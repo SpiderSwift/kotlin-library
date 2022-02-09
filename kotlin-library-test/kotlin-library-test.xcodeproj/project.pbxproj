@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		897AB9EF46AFAC3092D1E491 /* Pods_kotlin_library_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECE815000D1ECD1F519AE61 /* Pods_kotlin_library_test.framework */; };
 		AC95B45C2799C6F400C08B75 /* kotlin_library_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC95B4532799C6F400C08B75 /* kotlin_library_test.framework */; };
 		AC95B4612799C6F400C08B75 /* KotlinLibraryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95B4602799C6F400C08B75 /* KotlinLibraryTest.swift */; };
-		FDDA319771756865435AB7AA /* Pods_kotlin_library_test_kotlin_library_swift_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9C6E21B60184DC680B37C5 /* Pods_kotlin_library_test_kotlin_library_swift_test.framework */; };
+		AE96D3DC73BAD99F123DB1B6 /* Pods_kotlin_library_test_kotlin_library_swift_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7F2F9C5B5AE5AC256FE6DD /* Pods_kotlin_library_test_kotlin_library_swift_test.framework */; };
+		DE1617F92F9E5219793DCFF7 /* Pods_kotlin_library_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB69EB91E4945BD485ECDAE8 /* Pods_kotlin_library_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,15 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F83AF907DA773CBE4F71119 /* Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test-kotlin-library-swift-test/Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig"; sourceTree = "<group>"; };
-		3B9C6E21B60184DC680B37C5 /* Pods_kotlin_library_test_kotlin_library_swift_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotlin_library_test_kotlin_library_swift_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ECE815000D1ECD1F519AE61 /* Pods_kotlin_library_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotlin_library_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9539628E801100F5563B35C1 /* Pods-kotlin-library-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test.debug.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test/Pods-kotlin-library-test.debug.xcconfig"; sourceTree = "<group>"; };
-		960A1668D738E956BC97EA09 /* Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test-kotlin-library-swift-test/Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig"; sourceTree = "<group>"; };
+		2EE6C81D9E2351DD31975368 /* Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test-kotlin-library-swift-test/Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig"; sourceTree = "<group>"; };
+		3943FFD534527DCD1D7869B4 /* Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test-kotlin-library-swift-test/Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig"; sourceTree = "<group>"; };
+		5622EC95BD65033A47989C77 /* Pods-kotlin-library-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test.debug.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test/Pods-kotlin-library-test.debug.xcconfig"; sourceTree = "<group>"; };
+		AAB7328BB5E74E9557C44612 /* Pods-kotlin-library-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test.release.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test/Pods-kotlin-library-test.release.xcconfig"; sourceTree = "<group>"; };
 		AC95B4532799C6F400C08B75 /* kotlin_library_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kotlin_library_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC95B45B2799C6F400C08B75 /* kotlin-library-swift-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kotlin-library-swift-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC95B4602799C6F400C08B75 /* KotlinLibraryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinLibraryTest.swift; sourceTree = "<group>"; };
-		CACC5F4A0EAA511D8C182DF4 /* Pods-kotlin-library-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotlin-library-test.release.xcconfig"; path = "Target Support Files/Pods-kotlin-library-test/Pods-kotlin-library-test.release.xcconfig"; sourceTree = "<group>"; };
+		CB69EB91E4945BD485ECDAE8 /* Pods_kotlin_library_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotlin_library_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7F2F9C5B5AE5AC256FE6DD /* Pods_kotlin_library_test_kotlin_library_swift_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotlin_library_test_kotlin_library_swift_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897AB9EF46AFAC3092D1E491 /* Pods_kotlin_library_test.framework in Frameworks */,
+				DE1617F92F9E5219793DCFF7 /* Pods_kotlin_library_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC95B45C2799C6F400C08B75 /* kotlin_library_test.framework in Frameworks */,
-				FDDA319771756865435AB7AA /* Pods_kotlin_library_test_kotlin_library_swift_test.framework in Frameworks */,
+				AE96D3DC73BAD99F123DB1B6 /* Pods_kotlin_library_test_kotlin_library_swift_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,21 +59,12 @@
 		69B44D5C4C9345C6E5CBCCFE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9539628E801100F5563B35C1 /* Pods-kotlin-library-test.debug.xcconfig */,
-				CACC5F4A0EAA511D8C182DF4 /* Pods-kotlin-library-test.release.xcconfig */,
-				0F83AF907DA773CBE4F71119 /* Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig */,
-				960A1668D738E956BC97EA09 /* Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig */,
+				5622EC95BD65033A47989C77 /* Pods-kotlin-library-test.debug.xcconfig */,
+				AAB7328BB5E74E9557C44612 /* Pods-kotlin-library-test.release.xcconfig */,
+				3943FFD534527DCD1D7869B4 /* Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig */,
+				2EE6C81D9E2351DD31975368 /* Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		86368CFE149D67BA0CCEECFE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8ECE815000D1ECD1F519AE61 /* Pods_kotlin_library_test.framework */,
-				3B9C6E21B60184DC680B37C5 /* Pods_kotlin_library_test_kotlin_library_swift_test.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AC95B4492799C6F400C08B75 = {
@@ -82,7 +73,7 @@
 				AC95B45F2799C6F400C08B75 /* kotlin-library-swift-test */,
 				AC95B4542799C6F400C08B75 /* Products */,
 				69B44D5C4C9345C6E5CBCCFE /* Pods */,
-				86368CFE149D67BA0CCEECFE /* Frameworks */,
+				B38578AA41996A8997731049 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +94,15 @@
 			path = "kotlin-library-swift-test";
 			sourceTree = "<group>";
 		};
+		B38578AA41996A8997731049 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB69EB91E4945BD485ECDAE8 /* Pods_kotlin_library_test.framework */,
+				DC7F2F9C5B5AE5AC256FE6DD /* Pods_kotlin_library_test_kotlin_library_swift_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -120,7 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC95B4652799C6F400C08B75 /* Build configuration list for PBXNativeTarget "kotlin-library-test" */;
 			buildPhases = (
-				89DDFBE9201D056620D0873E /* [CP] Check Pods Manifest.lock */,
+				6DFA39EE8ABFB20C2B447ADF /* [CP] Check Pods Manifest.lock */,
 				AC95B44E2799C6F400C08B75 /* Headers */,
 				AC95B44F2799C6F400C08B75 /* Sources */,
 				AC95B4502799C6F400C08B75 /* Frameworks */,
@@ -139,11 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC95B4682799C6F400C08B75 /* Build configuration list for PBXNativeTarget "kotlin-library-swift-test" */;
 			buildPhases = (
-				5EB249FC88CF6B6B1E8C5C8B /* [CP] Check Pods Manifest.lock */,
+				01E2E46B4F90C27A618CA0A5 /* [CP] Check Pods Manifest.lock */,
 				AC95B4572799C6F400C08B75 /* Sources */,
 				AC95B4582799C6F400C08B75 /* Frameworks */,
 				AC95B4592799C6F400C08B75 /* Resources */,
-				E3BA61A75053ED91989782CF /* [CP] Embed Pods Frameworks */,
+				ECB925FF89F66B1E0412A288 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +210,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5EB249FC88CF6B6B1E8C5C8B /* [CP] Check Pods Manifest.lock */ = {
+		01E2E46B4F90C27A618CA0A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,7 +232,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		89DDFBE9201D056620D0873E /* [CP] Check Pods Manifest.lock */ = {
+		6DFA39EE8ABFB20C2B447ADF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,7 +254,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E3BA61A75053ED91989782CF /* [CP] Embed Pods Frameworks */ = {
+		ECB925FF89F66B1E0412A288 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -424,7 +424,7 @@
 		};
 		AC95B4662799C6F400C08B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9539628E801100F5563B35C1 /* Pods-kotlin-library-test.debug.xcconfig */;
+			baseConfigurationReference = 5622EC95BD65033A47989C77 /* Pods-kotlin-library-test.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -455,7 +455,7 @@
 		};
 		AC95B4672799C6F400C08B75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CACC5F4A0EAA511D8C182DF4 /* Pods-kotlin-library-test.release.xcconfig */;
+			baseConfigurationReference = AAB7328BB5E74E9557C44612 /* Pods-kotlin-library-test.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -486,7 +486,7 @@
 		};
 		AC95B4692799C6F400C08B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F83AF907DA773CBE4F71119 /* Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig */;
+			baseConfigurationReference = 3943FFD534527DCD1D7869B4 /* Pods-kotlin-library-test-kotlin-library-swift-test.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -503,7 +503,7 @@
 		};
 		AC95B46A2799C6F400C08B75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 960A1668D738E956BC97EA09 /* Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig */;
+			baseConfigurationReference = 2EE6C81D9E2351DD31975368 /* Pods-kotlin-library-test-kotlin-library-swift-test.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

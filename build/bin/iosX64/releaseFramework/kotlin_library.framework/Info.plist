@@ -5,7 +5,7 @@
     <key>CFBundleExecutable</key>
     <string>kotlin_library</string>
     <key>CFBundleIdentifier</key>
-    <string>by.citech.library.kotlin_library</string>
+    <string>by.citech.reqrsp.kotlin_library</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
