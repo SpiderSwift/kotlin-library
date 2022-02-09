@@ -41,8 +41,10 @@ class KotlinLibaryTest: XCTestCase {
             let adapter = InputAdapterImpl()
             let req =  adapter.extractReqMeta(body: "")
             print(req)
-            
             let factory = ReqRspLayerFactory<NSString, NSString>()
+            assert(test.integer == 0)
+            assert(test.map == ["a" : "b", "c" : "d"])
+            assert(test.list == ["a", "b", "c", "d"])
         }
     }
 
