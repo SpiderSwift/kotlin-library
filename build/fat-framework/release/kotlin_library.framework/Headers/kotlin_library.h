@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class Kotlin_libraryReqInputResult, Kotlin_libraryRspInputResult, Kotlin_libraryInputResult, Kotlin_libraryLayerTimings, Kotlin_libraryKotlinEnumCompanion, Kotlin_libraryKotlinEnum<E>, Kotlin_libraryKotlinArray<T>, Kotlin_libraryReqTimings, Kotlin_libraryRspHandler<I>, Kotlin_libraryReqRspLayer<O, I>, Kotlin_libraryInputAdapter<I>, Kotlin_libraryOutputAdapter<O>, Kotlin_libraryReqHandler<I, O>, Kotlin_libraryTransportAdapter<O>, Kotlin_libraryLocalReqCtx<I, O>, Kotlin_libraryOutputSrc<O>, Kotlin_libraryRemoteReqCtx<O>, Kotlin_libraryReqMeta, Kotlin_libraryRspMeta, Kotlin_libraryRsp<I>, Kotlin_libraryLogLvl, Kotlin_libraryMutableOutputSrc<O>, Kotlin_libraryRspResult;
+@class Kotlin_libraryReqInputResult, Kotlin_libraryRspInputResult, Kotlin_libraryInputResult, Kotlin_libraryTransportAdapter<O>, Kotlin_libraryLayerTimings, Kotlin_libraryKotlinEnumCompanion, Kotlin_libraryKotlinEnum<E>, Kotlin_libraryKotlinArray<T>, Kotlin_libraryReqTimings, Kotlin_libraryRspHandler<I>, Kotlin_libraryReqRspLayer<O, I>, Kotlin_libraryInputAdapter<I>, Kotlin_libraryOutputAdapter<O>, Kotlin_libraryReqHandler<I, O>, Kotlin_libraryLocalReqCtx<I, O>, Kotlin_libraryOutputSrc<O>, Kotlin_libraryRemoteReqCtx<O>, Kotlin_libraryReqMeta, Kotlin_libraryRspMeta, Kotlin_libraryRsp<I>, Kotlin_libraryLogLvl, Kotlin_libraryMutableOutputSrc<O>, Kotlin_libraryRspResult;
 
-@protocol Kotlin_libraryKotlinComparable, Kotlin_libraryLogDst, Kotlin_libraryKotlinIterator;
+@protocol Kotlin_libraryTestInterface, Kotlin_libraryKotlinComparable, Kotlin_libraryLogDst, Kotlin_libraryKotlinIterator;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -161,6 +161,19 @@ __attribute__((swift_name("InputResult")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("InterfaceCaller")))
+@interface Kotlin_libraryInterfaceCaller<I> : Kotlin_libraryBase
+- (instancetype)initWithVariable:(I _Nullable)variable testInterface:(id<Kotlin_libraryTestInterface>)testInterface transportAdapter:(Kotlin_libraryTransportAdapter<I> *)transportAdapter __attribute__((swift_name("init(variable:testInterface:transportAdapter:)"))) __attribute__((objc_designated_initializer));
+- (void)callAbstractClass __attribute__((swift_name("callAbstractClass()")));
+- (void)callInterface __attribute__((swift_name("callInterface()")));
+@property int32_t counter __attribute__((swift_name("counter")));
+@property (readonly) Kotlin_libraryMutableDictionary<id, id> *map __attribute__((swift_name("map")));
+@property (readonly) id<Kotlin_libraryTestInterface> testInterface __attribute__((swift_name("testInterface")));
+@property (readonly) Kotlin_libraryTransportAdapter<I> *transportAdapter __attribute__((swift_name("transportAdapter")));
+@property (readonly) I _Nullable variable __attribute__((swift_name("variable")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LayerTimings")))
 @interface Kotlin_libraryLayerTimings : Kotlin_libraryBase
 - (instancetype)initWithRspStoreTimeout:(int64_t)rspStoreTimeout reqStoreTimeout:(int64_t)reqStoreTimeout __attribute__((swift_name("init(rspStoreTimeout:reqStoreTimeout:)"))) __attribute__((objc_designated_initializer));
@@ -241,6 +254,12 @@ __attribute__((swift_name("RspInputResult")))
 @property (class, readonly) Kotlin_libraryRspInputResult *consumedWithHandler __attribute__((swift_name("consumedWithHandler")));
 @property (class, readonly) Kotlin_libraryRspInputResult *consumedWithoutHandler __attribute__((swift_name("consumedWithoutHandler")));
 + (Kotlin_libraryKotlinArray<Kotlin_libraryRspInputResult *> *)values __attribute__((swift_name("values()")));
+@end;
+
+__attribute__((swift_name("TestInterface")))
+@protocol Kotlin_libraryTestInterface
+@required
+- (void)aT:(id _Nullable)t __attribute__((swift_name("a(t:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
